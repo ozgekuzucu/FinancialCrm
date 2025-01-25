@@ -87,5 +87,7 @@ namespace FinancialCrm
 			frm.Show();
 			this.Hide();
 		}
+
+		
 	}
 }
