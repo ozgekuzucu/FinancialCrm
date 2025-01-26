@@ -32,5 +32,6 @@ namespace FinancialCrm.Models
         public virtual DbSet<Spendings> Spendings { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Admins> Admins { get; set; }
     }
 }

@@ -45,10 +45,10 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.button8 = new System.Windows.Forms.Button();
+			this.btnSignOut = new System.Windows.Forms.Button();
+			this.btnSettings = new System.Windows.Forms.Button();
+			this.btnDashboard = new System.Windows.Forms.Button();
+			this.btnBankProcesses = new System.Windows.Forms.Button();
 			this.btnSpendingsForm = new System.Windows.Forms.Button();
 			this.btnBillsForm = new System.Windows.Forms.Button();
 			this.btnBanksForm = new System.Windows.Forms.Button();
@@ -177,58 +177,61 @@
 			this.panel2.Size = new System.Drawing.Size(1056, 55);
 			this.panel2.TabIndex = 9;
 			// 
-			// button6
+			// btnSignOut
 			// 
-			this.button6.BackColor = System.Drawing.Color.Transparent;
-			this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button6.ForeColor = System.Drawing.Color.White;
-			this.button6.Location = new System.Drawing.Point(12, 468);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(182, 42);
-			this.button6.TabIndex = 7;
-			this.button6.Text = "Çıkış Yap";
-			this.button6.UseVisualStyleBackColor = false;
+			this.btnSignOut.BackColor = System.Drawing.Color.Transparent;
+			this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnSignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSignOut.ForeColor = System.Drawing.Color.White;
+			this.btnSignOut.Location = new System.Drawing.Point(12, 468);
+			this.btnSignOut.Name = "btnSignOut";
+			this.btnSignOut.Size = new System.Drawing.Size(182, 42);
+			this.btnSignOut.TabIndex = 7;
+			this.btnSignOut.Text = "Çıkış Yap";
+			this.btnSignOut.UseVisualStyleBackColor = false;
+			this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
 			// 
-			// button5
+			// btnSettings
 			// 
-			this.button5.BackColor = System.Drawing.Color.Transparent;
-			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button5.ForeColor = System.Drawing.Color.White;
-			this.button5.Location = new System.Drawing.Point(12, 408);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(182, 42);
-			this.button5.TabIndex = 6;
-			this.button5.Text = "Ayarlar";
-			this.button5.UseVisualStyleBackColor = false;
+			this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+			this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnSettings.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSettings.ForeColor = System.Drawing.Color.White;
+			this.btnSettings.Location = new System.Drawing.Point(12, 408);
+			this.btnSettings.Name = "btnSettings";
+			this.btnSettings.Size = new System.Drawing.Size(182, 42);
+			this.btnSettings.TabIndex = 6;
+			this.btnSettings.Text = "Ayarlar";
+			this.btnSettings.UseVisualStyleBackColor = false;
+			this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
 			// 
-			// button7
+			// btnDashboard
 			// 
-			this.button7.BackColor = System.Drawing.Color.Transparent;
-			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button7.ForeColor = System.Drawing.Color.White;
-			this.button7.Location = new System.Drawing.Point(12, 348);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(182, 42);
-			this.button7.TabIndex = 5;
-			this.button7.Text = "Dashboard";
-			this.button7.UseVisualStyleBackColor = false;
+			this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+			this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDashboard.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnDashboard.ForeColor = System.Drawing.Color.White;
+			this.btnDashboard.Location = new System.Drawing.Point(12, 348);
+			this.btnDashboard.Name = "btnDashboard";
+			this.btnDashboard.Size = new System.Drawing.Size(182, 42);
+			this.btnDashboard.TabIndex = 5;
+			this.btnDashboard.Text = "Dashboard";
+			this.btnDashboard.UseVisualStyleBackColor = false;
+			this.btnDashboard.Click += new System.EventHandler(this.button7_Click);
 			// 
-			// button8
+			// btnBankProcesses
 			// 
-			this.button8.BackColor = System.Drawing.Color.Transparent;
-			this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button8.ForeColor = System.Drawing.Color.White;
-			this.button8.Location = new System.Drawing.Point(12, 286);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(182, 42);
-			this.button8.TabIndex = 4;
-			this.button8.Text = "Banka Hareketleri";
-			this.button8.UseVisualStyleBackColor = false;
-			this.button8.Click += new System.EventHandler(this.button8_Click);
+			this.btnBankProcesses.BackColor = System.Drawing.Color.Transparent;
+			this.btnBankProcesses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBankProcesses.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnBankProcesses.ForeColor = System.Drawing.Color.White;
+			this.btnBankProcesses.Location = new System.Drawing.Point(12, 286);
+			this.btnBankProcesses.Name = "btnBankProcesses";
+			this.btnBankProcesses.Size = new System.Drawing.Size(182, 42);
+			this.btnBankProcesses.TabIndex = 4;
+			this.btnBankProcesses.Text = "Banka Hareketleri";
+			this.btnBankProcesses.UseVisualStyleBackColor = false;
+			this.btnBankProcesses.Click += new System.EventHandler(this.button8_Click);
 			// 
 			// btnSpendingsForm
 			// 
@@ -290,16 +293,16 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(14)))), ((int)(((byte)(209)))));
-			this.panel1.Controls.Add(this.button6);
-			this.panel1.Controls.Add(this.button5);
-			this.panel1.Controls.Add(this.button7);
-			this.panel1.Controls.Add(this.button8);
+			this.panel1.Controls.Add(this.btnSignOut);
+			this.panel1.Controls.Add(this.btnSettings);
+			this.panel1.Controls.Add(this.btnDashboard);
+			this.panel1.Controls.Add(this.btnBankProcesses);
 			this.panel1.Controls.Add(this.btnSpendingsForm);
 			this.panel1.Controls.Add(this.btnBillsForm);
 			this.panel1.Controls.Add(this.btnBanksForm);
 			this.panel1.Controls.Add(this.btnCategoriesForm);
 			this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.panel1.Location = new System.Drawing.Point(-1, 48);
+			this.panel1.Location = new System.Drawing.Point(-1, 55);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(202, 585);
 			this.panel1.TabIndex = 8;
@@ -394,12 +397,12 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1055, 632);
 			this.Controls.Add(this.panel4);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.chart2);
 			this.Controls.Add(this.chart1);
 			this.Controls.Add(this.panel6);
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.panel5);
 			this.Name = "FrmDashboard";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -434,10 +437,10 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button button6;
-		private System.Windows.Forms.Button button5;
-		private System.Windows.Forms.Button button7;
-		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.Button btnSignOut;
+		private System.Windows.Forms.Button btnSettings;
+		private System.Windows.Forms.Button btnDashboard;
+		private System.Windows.Forms.Button btnBankProcesses;
 		private System.Windows.Forms.Button btnSpendingsForm;
 		private System.Windows.Forms.Button btnBillsForm;
 		private System.Windows.Forms.Button btnBanksForm;

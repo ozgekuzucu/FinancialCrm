@@ -84,5 +84,68 @@ namespace FinancialCrm
 			var values = db.Spendings.ToList();
 			dataGridView1.DataSource = values;
 		}
+
+		private void btnCategories_Click(object sender, EventArgs e)
+		{
+			FrmCategories frm = new FrmCategories();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnBanksForm_Click(object sender, EventArgs e)
+		{
+			FrmBanks frm = new FrmBanks();	
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnBillsForm_Click(object sender, EventArgs e)
+		{
+			FrmBilling frm = new FrmBilling();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnBillForm_Click(object sender, EventArgs e)
+		{
+			FrmSpendings frm = new FrmSpendings();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnBankProcesses_Click(object sender, EventArgs e)
+		{
+			FrmBankProcesses frm = new FrmBankProcesses();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnDashboard_Click(object sender, EventArgs e)
+		{
+			FrmDashboard frm = new FrmDashboard();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnSettings_Click(object sender, EventArgs e)
+		{
+			FrmSettings frm = new FrmSettings();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void btnCategories_Click_1(object sender, EventArgs e)
+		{
+			FrmCategories frm = new FrmCategories();
+			frm.Show();
+			this.Hide();
+		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			FrmLogin frm = new FrmLogin();
+			frm.Show();
+		}
 	}
 }
